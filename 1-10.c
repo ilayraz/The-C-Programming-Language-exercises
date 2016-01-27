@@ -2,7 +2,7 @@
 
 /* replaces tabs, newlines, and slashes with their respective string literal */
 
-main() {
+int main(void) {
     int c;
 
     while ((c = getchar()) != EOF) {
@@ -15,4 +15,6 @@ main() {
         else
             putchar(c);
     }
+
+    return 0;
 }

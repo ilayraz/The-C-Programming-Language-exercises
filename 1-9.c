@@ -2,7 +2,7 @@
 
 /* replaces a string of multiple blanks with a single blank */
 
-main() {
+int main(void) {
     int lastc, c;
 
     lastc = 0;
@@ -12,4 +12,5 @@ main() {
         lastc = c;
     }
 
+    return 0;
 }

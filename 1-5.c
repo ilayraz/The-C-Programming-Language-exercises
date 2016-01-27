@@ -6,7 +6,7 @@
 #define UPPER 300
 #define STEP 20
 
-main() {
+int main(void) {
     float celsius, fahr;
 
     celsius = UPPER;
@@ -15,4 +15,6 @@ main() {
         printf("%3.0f %6.1f\n", celsius, fahr);
         celsius -= STEP;
     }
+
+    return 0;
 }

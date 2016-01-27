@@ -2,7 +2,7 @@
 
 /* prints a vertical histogram of length of words in string. (max lenth = 10) */
 
-main () {
+int main (void) {
     int len[10];
     int c, i, word;
     word = 0;
@@ -34,4 +34,6 @@ main () {
         printf("\n");
         word--;
     }
+
+    return 0;
 }

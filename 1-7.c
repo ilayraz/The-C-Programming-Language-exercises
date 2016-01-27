@@ -5,6 +5,8 @@
     at the time of running the answer is "-1"
  */
 
-main () {
+int main (void) {
     printf("%d\n", EOF);
+
+    return 0;
 }

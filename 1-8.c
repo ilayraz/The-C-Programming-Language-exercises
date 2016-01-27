@@ -2,7 +2,7 @@
 
 /* counts the number of blanks, tabs, and newlines in the input */
 
-main() {
+int main(void) {
     int c, nl, nt, ns;
 
     nl = nt = ns = 0;
@@ -15,4 +15,6 @@ main() {
             ns++;
     }
     printf("Newlines: %d. Tabs: %d. Spaces: %d", nl, nt, ns);
+
+    return 0;
 }
