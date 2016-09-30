@@ -24,7 +24,10 @@ int getsline(char s[], int lim) {
         s[i] = c;
     if (c == '\n')
         s[i++] = c;
-    s[i] = '\0';
+    s[i--] = '\0';
+
+    printf("getchar(%d): %s\n", i,s);
+
     return i;
 }
 
@@ -35,7 +38,7 @@ void reverse (char s[], int len) {
     while (s[len] == '\n' || s[len] == '\0')
         len--;
 
-    for (i = 0; i < (int)(len / 2); i++) {
+    for (i = 0; i < (int)(len / 2) + 1; i++) {
         temp = s[len - i];
         s[len - i] = s[i];
         s[i] = temp;
